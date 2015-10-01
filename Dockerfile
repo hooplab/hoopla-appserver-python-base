@@ -46,3 +46,5 @@ RUN apt-get update && \
 
 # Make our fresh git install available for all users!
 RUN ln -s /opt/git-openssl/git-1.9.1/bin-wrappers/git /usr/bin/git
+
+RUN pip install awscli
