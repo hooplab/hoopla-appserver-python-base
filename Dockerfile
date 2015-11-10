@@ -23,7 +23,7 @@ RUN pip install sh && \
 RUN apt-get install -y swig libpq-dev python-dev libffi-dev
 
 # Install docker-CLI binary. Version 1.1.2 bc. of newest ubuntu repo version
-ADD https://get.docker.com/builds/Linux/x86_64/docker-1.9.0 /usr/local/bin/docker
+ADD https://get.docker.com/builds/Linux/x86_64/docker-1.7.1 /usr/local/bin/docker
 RUN chmod +x /usr/local/bin/docker
 
 RUN chmod u+w /etc/sudoers && \
