@@ -4,7 +4,10 @@ MAINTAINER Halvor Granskogen Bjørnstad <halvor@hoopla.no>
 
 # Install python2.7 and python-pip
 RUN apt-get update && \
-    apt-get -y install python2.7 python-pip
+    apt-get -y install python2.7
+
+RUN wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
+    python /tmp/get-pip.py
 
 # Install wkhtmltopdf 0.12.2.1
 RUN apt-get install -y libxfont1 xfonts-encodings xfonts-utils xfonts-base xfonts-75dpi && \
