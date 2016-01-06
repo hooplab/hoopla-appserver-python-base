@@ -42,7 +42,7 @@ RUN apt-get update && \
     apt-get source -y git && \
     apt-get build-dep -y git && \
     apt-get install -y libcurl4-openssl-dev && \
-    dpkg-source -x git_1.9.1-1ubuntu0.1.dsc && \
+    dpkg-source -x git_1.9.1-1ubuntu0.2.dsc && \
     cd git-1.9.1 && \
     ./configure --prefix=/opt && \
     make
