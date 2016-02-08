@@ -14,7 +14,7 @@ RUN sudo apt-get update && \
     wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz && \
     unxz wkhtmltox-0.12.3_linux-generic-amd64.tar.xz && \
     tar -xf wkhtmltox-0.12.3_linux-generic-amd64.tar && \
-    mv /wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltox && \
+    mv /wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltopdf && \
     rm -rf /wkhtmltox && \
     rm -rf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz && \
 
