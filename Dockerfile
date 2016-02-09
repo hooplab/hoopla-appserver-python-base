@@ -33,5 +33,6 @@ RUN wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
 RUN apk add --update \
     swig \
     build-base \
+    linux-headers \
     postgresql-dev && \
     rm -rf /var/cache/apk/*
