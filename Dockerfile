@@ -11,7 +11,9 @@ RUN apk add --update \
     curl \
     vim \
     bash \
+    libxml2 \
     libxml2-dev \
+    libxslt \
     libxslt-dev && \
     rm -rf /var/cache/apk/*
 
@@ -27,3 +29,6 @@ RUN wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
     pip install sh logging setuptools awscli virtualenv --upgrade && \
     mkdir /virtualenvs && \
     virtualenv /virtualenvs/hoopla
+
+RUN apk add --update \
+    libxml2-utils
