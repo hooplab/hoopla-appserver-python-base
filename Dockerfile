@@ -32,5 +32,6 @@ RUN wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
 
 RUN apk add --update \
     swig \
+    ethtool \
     postgresql-dev && \
     rm -rf /var/cache/apk/*
