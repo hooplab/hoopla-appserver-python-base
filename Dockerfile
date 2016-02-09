@@ -4,7 +4,7 @@ MAINTAINER Halvor Granskogen Bjørnstad <halvor@hoopla.no>
 RUN sudo apt-get update && \
     sudo apt-get -y upgrade && \
     sudo apt-get install -y libssl-dev && \
-    sudo apt-get -y install python2.7 swig libpq-dev python-dev libffi-dev wget curl libxml2-dev libxslt1-dev && \
+    sudo apt-get -y install python2.7 swig libpq-dev python-dev libffi-dev wget curl libxml2-dev libxslt1-dev vim && \
     wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
     python /tmp/get-pip.py && \
     pip install sh logging setuptools awscli && \
