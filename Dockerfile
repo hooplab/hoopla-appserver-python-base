@@ -11,18 +11,14 @@ RUN apk add --update \
     curl \
     vim \
     bash \
-    libxml2 \
-    libxml2-dev \
-    libxslt \
-    libxslt-dev && \
-    rm -rf /var/cache/apk/*
+ && rm -rf /var/cache/apk/*
 
 # Install wkhtmltopdf from testing repository
 # TODO: wait for it to be added to the main repository
 RUN apk add --update \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted \
-    wkhtmltopdf && \
-    rm -rf /var/cache/apk/*
+    wkhtmltopdf \
+ && rm -rf /var/cache/apk/*1
 
 RUN wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py && \
     python /tmp/get-pip.py && \
