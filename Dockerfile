@@ -12,9 +12,7 @@ RUN apk add --update \
     vim \
     bash \
     libxml2-dev \
-    libxslt-dev \
-    musl-dev \
-    gcc && \
+    libxslt-dev && \
     rm -rf /var/cache/apk/*
 
 # Install wkhtmltopdf from testing repository
