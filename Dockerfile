@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 MAINTAINER Halvor Granskogen Bjørnstad <halvor@hoopla.no>
 
 RUN sudo apt-get update && \
